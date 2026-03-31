@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Any-ttach enables manipulation dexterity with a simple quick-swap end-effector interface.">
+  <meta name="keywords" content="robotics, manipulation, tool use, end-effector swapping, imitation learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .main-video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+
+    .task-video {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-top: 1rem;
+    }
+
+    .section-spacing {
+      margin-top: 2rem;
+    }
+
+    .video-embed {
+      width: 100%;
+      border: none;
+      border-radius: 12px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Anonymous Submission</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/teaser.png" alt="Any-ttach teaser image" class="main-image">
+      <h2 class="subtitle has-text-centered section-spacing">
+        <span class="dnerf">Any-ttach</span> enables a robot to quickly swap end-effectors and compose diverse tool-use skills for long-horizon manipulation.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Robotic manipulation dexterity is typically pursued through high-DoF multifingered hands with substantial complexity.
+            While many robotic hands aim to replicate human hands, the functional role of human hands suggests that much of this complexity is to support tool using and making.
+            This observation motivates <i>Any-ttach</i>: we leverage the flexibility of mechanical systems and directly employ end-effector swapping as a central mechanism for dexterity.
+          </p>
+          <p>
+            <i>Any-ttach</i> consists of (1) a low-cost, automatic, and easily deployable end-effector swapping mechanism that interfaces with a 1-DoF parallel gripper,
+            (2) a handheld device for collecting human demonstration data, and
+            (3) a task planning framework that integrates learned, parameterized, and planned skills to enable flexible use of diverse everyday tools.
+          </p>
+          <p>
+            In experiments, we evaluate the effectiveness of the swapping mechanism and show that this kinematically constrained coupling provides unique advantages in robust skill demonstration and tool-changing efficiency.
+            The system demonstrates broad compatibility across different skills with different end-effectors, spanning regular everyday tools, articulated tools, and a low-cost anthropomorphic hand.
+            We verify the system on two long-horizon tasks, making sandwich and preparing cucumber, with 6 sub-skills, demonstrating that hierarchical tool-skill decomposition improves complex task reliability.
+          </p>
+          <p>
+            We hope <i>Any-ttach</i> offers an alternative path to manipulation dexterity with simplicity --- dexterity can emerge from composing skills across end-effectors and exploiting contact interactions within each skill. 
+            In this view, even a simple 1-DoF gripper can achieve greater manipulation dexterity.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Overview</h2>
+        <iframe
+          class="video-embed"
+          src="https://drive.google.com/file/d/1csvwdVXocy3zPRvQiYtU6kj-8-4jhSNZ/preview"
+          width="100%"
+          height="520"
+          allow="autoplay">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">System Pipeline</h2>
+        <div class="content has-text-justified">
+          <p>
+            Any-ttach is structured as a three-stage pipeline:
+            (1) a task planner maps language instructions to an ordered sequence of tool-skill pairs,
+            (2) each skill is executed in closed loop using learned or planning-based modules,
+            and (3) verifiers check tool attachment and task completion to enable automatic retry.
+          </p>
+          <img src="./static/images/pipeline.png" alt="System pipeline" class="main-image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Long-Horizon Tasks</h2>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate Any-ttach on two representative long-horizon tasks:
+          </p>
+          <!-- <ul>
+            <li><b>LH1:</b> Sandwich Assembly.</li>
+            <li><b>LH2:</b> Cucumber Preparation.</li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4">LH1: Sandwich Assembly</h3>
+          <iframe
+            class="video-embed"
+            src="https://drive.google.com/file/d/1SSP0zZaudnbiS3EI8H_awusmWn5sL7xV/preview"
+            width="100%"
+            height="320"
+            allow="autoplay">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4">LH2: Cucumber Preparation</h3>
+          <iframe
+            class="video-embed"
+            src="https://drive.google.com/file/d/114sw8GpUAizKiNSWMb6g5v8PSdV9gPgV/preview"
+            width="100%"
+            height="320"
+            allow="autoplay">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+<pre><code>@inproceedings{anyttach2026,
+  title     = {Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity},
+  author    = {Anonymous Submission},
+  booktitle = {Conference Submission},
+  year      = {2026}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This website is adapted from the
+        <a href="https://nerfies.github.io/">Nerfies project page</a>.
+        Template source:
+        <a href="https://github.com/nerfies/nerfies.github.io">GitHub</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
