@@ -165,23 +165,12 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Robotic manipulation dexterity is typically pursued through high-DoF multifingered hands with substantial complexity.
-            While many robotic hands aim to replicate human hands, the functional role of human hands suggests that much of this complexity is to support tool using and making.
-            This observation motivates <i>Any-ttach</i>: we leverage the flexibility of mechanical systems and directly employ end-effector swapping as a central mechanism for dexterity.
-          </p>
-          <p>
-            <i>Any-ttach</i> consists of (1) a low-cost, automatic, and easily deployable end-effector swapping mechanism that interfaces with a 1-DoF parallel gripper,
-            (2) a handheld device for collecting human demonstration data, and
-            (3) a task planning framework that integrates learned, parameterized, and planned skills to enable flexible use of diverse everyday tools.
-          </p>
-          <p>
-            In experiments, we evaluate the effectiveness of the swapping mechanism and show that this kinematically constrained coupling provides unique advantages in robust skill demonstration and tool-changing efficiency.
-            The system demonstrates broad compatibility across different skills with different end-effectors, spanning regular everyday tools, articulated tools, and a low-cost anthropomorphic hand.
-            We verify the system on two long-horizon tasks, making sandwich and preparing cucumber, with 6 sub-skills, demonstrating that hierarchical tool-skill decomposition improves complex task reliability.
-          </p>
-          <p>
-            We hope <i>Any-ttach</i> offers an alternative path to manipulation dexterity with simplicity --- dexterity can emerge from composing skills across end-effectors and exploiting contact interactions within each skill. 
-            In this view, even a simple 1-DoF gripper can achieve greater manipulation dexterity.
+            Robotic manipulation dexterity is often pursued by building increasingly complex high-DoF multifingered hands.
+            While many robotic hands are designed to replicate the morphology of human hands, the functional role of human hands suggests a different perspective: much of their complexity may exist to enable tool use and tool making.
+            This observation motivates \textit{Any-ttach}: a tool-centric manipulation framework that leverages mechanical modularity and treats end-effector swapping as a primary mechanism for dexterity. \textit{Any-ttach} combines three components: 1) a low-cost, automatic, and easily deployable swapping mechanism for a 1-DoF parallel gripper, 2) a handheld device for collecting human demonstrations, and 3) a task planning framework that composes learned, parameterized, and planned skills for flexible use of diverse tools.
+            The system supports everyday tools, articulated tools such as scissors, and a low-cost anthropomorphic hand through the same end-effector interface.
+            Our experiments show that \textit{Any-ttach} improves tool-swapping reliability, enables more efficient demonstration collection, reduces tool-pose variability, and supports diverse tools and end-effector modules. 
+            In two long-horizon tasks, making a sandwich and preparing a cucumber, \textit{Any-ttach} executes 6 tool use subskills and demonstrates that hierarchical tool-skill decomposition can improve complex task reliability.
           </p>
         </div>
       </div>
@@ -201,6 +190,24 @@
           height="520"
           allow="autoplay">
         </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="Poster">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+
+        <h2 class="title is-3">Poster</h2>
+
+        <iframe
+          class="poster-embed"
+          src="./static/pdfs/Any_ttach_poster.pdf"
+          title="Any-ttach Poster">
+        </iframe>
+
       </div>
     </div>
   </div>
