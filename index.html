@@ -35,6 +35,11 @@
       margin: 0 auto;
     }
 
+    .teaser .main-image,
+    #MechanicalStructure .main-image {
+      width: 80%;
+    }
+
     .main-video {
       width: 100%;
       height: auto;
@@ -69,7 +74,7 @@
         <div class="column has-text-centered">
 
           <h1 class="title is-1 publication-title">
-            Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity
+            <span class="dnerf">Any-ttach</span>: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity
           </h1>
 
           <!-- Authors -->
@@ -177,8 +182,8 @@
           <p>
             Robotic manipulation dexterity is often pursued by building increasingly complex high-DoF multifingered hands.
             While many robotic hands are designed to replicate the morphology of human hands, the functional role of human hands suggests a different perspective: much of their complexity may exist to enable tool use and tool making.
-            This observation motivates <strong><em>Any-ttach</em></strong>, a tool-centric manipulation system that leverages mechanical modularity and treats autonomous end-effector swapping as a pathway towards dexterity.
-            <strong><em>Any-ttach</em></strong> combines: 1) a low-cost standardized interface with passive self-locking and mechanically triggered release mechanism; 2) a unified object-centric manipulation framework supporting kinesthetic teaching trajectory replay, human demonstration retargeting, and policy learning; and 3) hierarchical planning and execution system for tools and skills for multi-tool long-horizon tasks.
+            This observation motivates <span class="dnerf">Any-ttach</span>, a tool-centric manipulation system that leverages mechanical modularity and treats autonomous end-effector swapping as a pathway towards dexterity.
+            <span class="dnerf">Any-ttach</span> combines: 1) a low-cost standardized interface with passive self-locking and mechanically triggered release mechanism; 2) a unified object-centric manipulation framework supporting kinesthetic teaching trajectory replay, human demonstration retargeting, and policy learning; and 3) hierarchical planning and execution system for tools and skills for multi-tool long-horizon tasks.
             We demonstrated 15 heterogeneous end-effector modules supported by our system, spanning different robotic fingers, everyday tools (including articulated tools such as scissors), and unconventional end-effectors through the same interface.
             Experiments demonstrate reliable autonomous swapping, automatic integration to new tools, and broad manipulation capability across different skill sources.
             Two multi-tool application demonstrations, comprising seven tool&ndash;skill steps across two tasks, further illustrate the autonomous composition of end-effector exchange and heterogeneous manipulation skills.
@@ -234,7 +239,7 @@
         <h2 class="title is-3">System Pipeline</h2>
         <div class="content has-text-justified">
           <p>
-            Any-ttach is structured as a three-stage pipeline:
+            <span class="dnerf">Any-ttach</span> is structured as a three-stage pipeline:
             (1) a task planner maps language instructions to an ordered sequence of tool-skill pairs,
             (2) each skill is executed in closed loop using learned or planning-based modules,
             and (3) verifiers check tool attachment and task completion to enable automatic retry.
@@ -255,7 +260,7 @@
           <p>
             We evaluate the proposed end-effector swapping mechanism from two perspectives:
             autonomous swapping performance and demonstration efficiency.
-            The results show that the Any-ttach interface improves swapping reliability and supports more efficient collection of usable demonstrations for tool-centric manipulation.
+            The results show that the <span class="dnerf">Any-ttach</span> interface improves swapping reliability and supports more efficient collection of usable demonstrations for tool-centric manipulation.
           </p>
         </div>
       </div>
@@ -284,7 +289,7 @@
         <h2 class="title is-3">Long-Horizon Tasks</h2>
         <div class="content has-text-justified">
           <p>
-            We evaluate Any-ttach on two representative long-horizon tasks:
+            We evaluate <span class="dnerf">Any-ttach</span> on two representative long-horizon tasks:
           </p>
           <!-- <ul>
             <li><b>LH1:</b> Sandwich Assembly.</li>
@@ -328,7 +333,7 @@
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
 <pre><code>@article{ni2026anyttach,
-  title   = {Any-ttach: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity},
+  title   = {<span class="dnerf">Any-ttach</span>: Quick End-effector Swapping Enables Manipulation Dexterity with Simplicity},
   author  = {Ni, Weizhe and Li, Jinzhou and Li, Haoyu and Pan, Wenjing and Alessio-Bunnell, Cody Andres and Cheng, Xianyi},
   journal = {arXiv preprint arXiv:2605.30569},
   year    = {2026}
