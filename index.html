@@ -238,13 +238,17 @@
       <div class="column is-full-width">
         <h2 class="title is-3">System Pipeline</h2>
         <div class="content has-text-justified">
+          <img
+            src="./static/images/pipeline.png"
+            alt="System pipeline: task planning, skill execution, and end-effector swap primitives"
+            width="2400"
+            height="1100"
+            class="main-image">
           <p>
-            <span class="dnerf">Any-ttach</span> is structured as a three-stage pipeline:
-            (1) a task planner maps language instructions to an ordered sequence of tool-skill pairs,
-            (2) each skill is executed in closed loop using learned or planning-based modules,
-            and (3) verifiers check tool attachment and task completion to enable automatic retry.
+            (A) A VLM decomposes the task into tool&ndash;skill pairs.<br>
+            (B) Skill modules execute the selected manipulation behaviors.<br>
+            (C) Swap primitives autonomously attach and detach the required end effectors.
           </p>
-          <img src="./static/images/pipeline.png" alt="System pipeline" class="main-image">
         </div>
       </div>
     </div>
