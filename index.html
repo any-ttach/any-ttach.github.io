@@ -52,6 +52,40 @@
       margin-top: 1rem;
     }
 
+    .tool-skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem 0.5rem;
+    }
+
+    .tool-skill-video {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+      border-radius: 8px;
+      background: #f5f5f5;
+    }
+
+    .tool-skill-label {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      .tool-skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .tool-skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     .section-spacing {
       margin-top: 2rem;
     }
@@ -273,6 +307,178 @@
             (C) Swap primitives autonomously attach and detach the required end effectors.
           </p>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="DiverseToolSkills">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Diverse Tool Skills</h2>
+    <div class="tool-skills-grid">
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/finray.jpg"
+               aria-label="Fin Ray Gripper demonstration">
+          <source src="./static/videos/individual%20tools/finray.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/finray.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Fin Ray Gripper</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/gear_gripper.jpg"
+               aria-label="GEAR Gripper demonstration">
+          <source src="./static/videos/individual%20tools/GEAR%20gripper.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/GEAR%20gripper.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">GEAR Gripper</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/spatula.jpg"
+               aria-label="Spatula demonstration">
+          <source src="./static/videos/individual%20tools/spatula.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/spatula.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Spatula</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/spoon.jpg"
+               aria-label="Spoon demonstration">
+          <source src="./static/videos/individual%20tools/spoon.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/spoon.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Spoon</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/brush.jpg"
+               aria-label="Brush demonstration">
+          <source src="./static/videos/individual%20tools/brush.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/brush.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Brush</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/fork.jpg"
+               aria-label="Fork demonstration">
+          <source src="./static/videos/individual%20tools/fork.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/fork.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Fork</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/whisk.jpg"
+               aria-label="Whisk demonstration">
+          <source src="./static/videos/individual%20tools/whisk.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/whisk.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Whisk</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/screwdriver.jpg"
+               aria-label="Screwdriver demonstration">
+          <source src="./static/videos/individual%20tools/screwdriver.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/screwdriver.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Screwdriver</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/peeler.jpg"
+               aria-label="Peeler demonstration">
+          <source src="./static/videos/individual%20tools/peeler.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/peeler.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Peeler</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/cutter.jpg"
+               aria-label="Cutter demonstration">
+          <source src="./static/videos/individual%20tools/cutter.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/cutter.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Cutter</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/knife.jpg"
+               aria-label="Knife demonstration">
+          <source src="./static/videos/individual%20tools/knife.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/knife.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Knife</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/suction_cup.jpg"
+               aria-label="Suction Cup demonstration">
+          <source src="./static/videos/individual%20tools/suction_cup.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/suction_cup.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Suction Cup</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/cup_open.jpg"
+               aria-label="Cup Opener demonstration">
+          <source src="./static/videos/individual%20tools/cup_open.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/cup_open.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Cup Opener</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="1920" height="1080"
+               poster="./static/images/tool-skill-posters/scissor.jpg"
+               aria-label="Scissors demonstration">
+          <source src="./static/videos/individual%20tools/scissor.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/scissor.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Scissors</h3>
+      </div>
+
+      <div class="tool-skill">
+        <video class="tool-skill-video" autoplay loop muted controls playsinline
+               preload="metadata" width="3840" height="2160"
+               poster="./static/images/tool-skill-posters/toyhand.jpg"
+               aria-label="Toy Hand demonstration">
+          <source src="./static/videos/individual%20tools/toyhand.mp4" type="video/mp4">
+          <a href="./static/videos/individual%20tools/toyhand.mp4">Download the video</a>.
+        </video>
+        <h3 class="tool-skill-label">Toy Hand</h3>
       </div>
     </div>
   </div>
